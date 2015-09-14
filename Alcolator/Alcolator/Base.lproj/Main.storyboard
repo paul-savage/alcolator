@@ -34,7 +34,7 @@
                                 <rect key="frame" x="241" y="66" width="118" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ot-74-387">
-                                <rect key="frame" x="57" y="197" width="42" height="21"/>
+                                <rect key="frame" x="279" y="200" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -43,18 +43,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ot-74-387" secondAttribute="trailing" constant="15" id="3K6-9M-RIu"/>
                             <constraint firstItem="QNu-NA-qSx" firstAttribute="width" secondItem="M4N-Xj-Ebr" secondAttribute="width" id="5Zl-Iq-yMP"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="BcM-6n-819"/>
                             <constraint firstItem="M4N-Xj-Ebr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DxC-Zg-Lv1"/>
                             <constraint firstItem="M4N-Xj-Ebr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Fim-h0-TDt"/>
                             <constraint firstItem="47c-UV-2DO" firstAttribute="centerX" secondItem="QNu-NA-qSx" secondAttribute="centerX" id="G05-Mv-ZDf"/>
                             <constraint firstItem="6Ot-74-387" firstAttribute="top" secondItem="47c-UV-2DO" secondAttribute="bottom" constant="63" id="R4S-G9-SPc"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="top" secondItem="47c-UV-2DO" secondAttribute="bottom" constant="66" id="RGf-sz-Y3v"/>
                             <constraint firstItem="47c-UV-2DO" firstAttribute="top" secondItem="QNu-NA-qSx" secondAttribute="bottom" constant="8" id="SWN-ZX-fra"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="width" secondItem="47c-UV-2DO" secondAttribute="width" id="WNC-2N-REs"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="width" secondItem="47c-UV-2DO" secondAttribute="width" id="eeT-5p-nTf"/>
                             <constraint firstItem="QNu-NA-qSx" firstAttribute="centerX" secondItem="M4N-Xj-Ebr" secondAttribute="centerX" id="ffD-ie-iGT"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="top" secondItem="47c-UV-2DO" secondAttribute="bottom" constant="66" id="fgE-yF-mDj"/>
                             <constraint firstItem="QNu-NA-qSx" firstAttribute="top" secondItem="M4N-Xj-Ebr" secondAttribute="bottom" constant="8" id="glY-fq-Kgm"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="width" secondItem="47c-UV-2DO" secondAttribute="width" id="kGv-tf-PCj"/>
+                            <constraint firstItem="6Ot-74-387" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="nZE-PY-eK9"/>
                             <constraint firstItem="6Ot-74-387" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="oKo-im-1dh"/>
                             <constraint firstItem="M4N-Xj-Ebr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vkV-ci-6LZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Ot-74-387" secondAttribute="trailing" constant="15" id="wco-mI-cEC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ot-74-387" secondAttribute="trailing" constant="15" id="wxN-TM-sSZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BcM-6n-819"/>
+                                <exclude reference="R4S-G9-SPc"/>
+                                <exclude reference="RGf-sz-Y3v"/>
+                                <exclude reference="WNC-2N-REs"/>
+                                <exclude reference="kGv-tf-PCj"/>
+                                <exclude reference="oKo-im-1dh"/>
+                                <exclude reference="wco-mI-cEC"/>
+                                <exclude reference="wxN-TM-sSZ"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="iDk-N9-HLh" appends="YES" id="je0-lB-7ml"/>
                         </connections>
