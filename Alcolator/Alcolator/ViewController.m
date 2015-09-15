@@ -42,8 +42,35 @@
     
     [self.beerPercentTextField resignFirstResponder];
     
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
+    // first, calculate how much alcohol is in all those beers...
+    
+    int numberOfBeers = self.beerCountSlider.value;
+    
+    int ouncesInOneBeerGlass = 12;  // assume they are 12oz beer bottles
+    
+    float alcoholPercentageOfBeer = [self.beerPercentTextField.text floatValue] / 100;
+    
+    float ouncesOfAlcoholPerBeer = ouncesInOneBeerGlass * alcoholPercentageOfBeer;
+    
+    float ouncesOfAlcoholTotal = ouncesOfAlcoholPerBeer * numberOfBeers;
+    
+    // now, calculate the equivalent amount of wine...
+    
+    float ouncesInOneWineGlass = 5;
+    
+    float alcolholPercentageOfWine = 0.13;  // 13% is average
+    
+    float ouncesOfAlcoholPerWineGlass = ouncesInOneWineGlass * alcolholPercentageOfWine;
+    
+    float numberOfWineGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWineGlass;
+    
+    // round down to whole number for display
+    
+    int wholeNumber = numberOfWineGlassesForEquivalentAlcoholAmount;
+    
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", wholeNumber]];
 }
+
 
 - (IBAction)buttonPressed:(UIButton *)sender {
     
